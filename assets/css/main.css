@@ -1,8 +1,10 @@
 body {
-    margin: 0;
+    margin: 24px 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 22px;
+    height: 1145px;
+    position: relative;
 }
 
 hr {
@@ -12,9 +14,8 @@ hr {
 .header {
     width: 100%;
     max-width: 1024px;
-    height: 108px;
+    height: 150px;
     margin: auto;
-    margin-top: 24px;
 }
 
 .main {
@@ -27,9 +28,12 @@ hr {
 .footer {
     width: 100%;
     max-width: 1024px;
-    height: 180px;
+    height: 222px;
     margin: auto;
-    margin-bottom: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .container {
@@ -38,10 +42,22 @@ hr {
     margin: auto;
 }
 
+.c-hr {
+    width: 960px;
+    margin: auto;
+}
+
 .hc {
     width: 100%;
     height: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.d-hc {
+    width: 100%;
+    height: 108px;
 }
 
 .hc-item1 {
@@ -84,14 +100,17 @@ hr {
 .mc {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .m-left {
     width: 184px;
     height: 100%;
     margin: 0;
-    position: relative;
+    left: 0;
+    position: absolute;
 }
 
 .ml-1 {
@@ -138,6 +157,10 @@ hr {
 .m-right {
     width: 757px;
     margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -182,6 +205,7 @@ hr {
     width: 100%;
     height: 200px;
     display: flex;
+    justify-content: space-between;
 }
 
 .mr-txt div {
@@ -218,6 +242,7 @@ hr {
     margin: 0;
     padding: 15px 0 0 15px;
     box-sizing: border-box;
+    overflow: auto;
 }
 
 .fc-div1 .fc-ul li {
