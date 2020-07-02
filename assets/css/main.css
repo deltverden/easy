@@ -1,10 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 22px;
     width: 100%;
-    min-height: 93vh;
+    min-height: 97vh;
     position: relative;
 }
 
@@ -14,14 +19,12 @@ hr {
 
 .header {
     width: 100%;
-    max-width: 1024px;
-    height: 150px;
-    margin: 24px auto 0;
+    height: 174px;
+    margin: auto;
 }
 
 .main {
     width: 100%;
-    max-width: 1024px;
     height: 773px;
     margin: auto;
     padding-bottom: 222px;
@@ -29,7 +32,6 @@ hr {
 
 .footer {
     width: 100%;
-    max-width: 1024px;
     height: 222px;
     margin: 222px auto 0;
     position: absolute;
@@ -50,6 +52,7 @@ hr {
 }
 
 .hc {
+    padding-top: 24px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -178,7 +181,21 @@ hr {
     width: 100%;
     height: 100%;
     margin: 0;
+    box-sizing: border-box;
     padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mr-desc h3 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.mr-desc ul {
+    margin: 20px 0;
+    padding-left: 40px;
 }
 
 .mr-desc ul li {
@@ -187,6 +204,10 @@ hr {
 
 .mr-desc ul li span {
     font-weight: 700;
+}
+
+.mr-desc p {
+    margin-bottom: 20px;
 }
 
 .mr-imgs {
